@@ -26,6 +26,7 @@
     "globby": "^10",
     "mocha": "^5",
     "nyc": "^14",
+    "standard-version": "^9.1.0",
     "ts-node": "^8",
     "typescript": "^3.3"
   },
@@ -51,11 +52,20 @@
     ]
   },
   "repository": "tru-ID/cli-plugin-dev-server",
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true,
+      "bump": true
+    }
+  },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "#eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "changelog": "standard-version",
+    "publish:canary": "npm publish --tag canary --access public"
   }
 }

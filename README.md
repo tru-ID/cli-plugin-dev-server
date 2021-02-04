@@ -54,3 +54,35 @@ EXAMPLE
 
 _See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.1/src/commands/server.ts)_
 <!-- commandsstop -->
+
+## Releasing
+
+### CHANGELOG
+
+Ensure the `CHANGELOG.md` is updated:
+
+```
+yarn run changelog
+```
+
+Finesse the contents of `CHANGELOG.md` and commit.
+
+### Tag
+
+Tag the version that is being released with the version of the package and, optionally, the tag to be used in NPM:
+
+```
+git tag v{version}@{tag}
+```
+
+### Publish to NPM
+
+To release a canary version run:
+
+```
+yarn publish:canary
+```
+
+## License
+
+[MIT](LICENSE)
