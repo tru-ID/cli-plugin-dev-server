@@ -52,7 +52,7 @@ EXAMPLE
   $ tru server
 ```
 
-_See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.1/src/commands/server.ts)_
+_See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.2/src/commands/server.ts)_
 <!-- commandsstop -->
 
 ## Releasing
