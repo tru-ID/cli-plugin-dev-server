@@ -39,10 +39,6 @@ export default class Serve extends Command {
     const { flags } = this.parse(Serve)
     const projectConfig = await this.loadProjectConfig(flags)
 
-    // TODO: Remove when fixed in @tru_id/dev-server
-    process.env.TRU_ID_CLIENT_ID = projectConfig.credentials[0].client_id
-    process.env.TRU_ID_CLIENT_SECRET = projectConfig.credentials[0].client_secret
-
     server.serve({
       port: flags.port,
       localtunnel: {
