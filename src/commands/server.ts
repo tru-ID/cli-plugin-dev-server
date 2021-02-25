@@ -5,10 +5,12 @@ import { Command, flags } from '@oclif/command'
 const server = require('@tru_id/dev-server')
 
 export default class Serve extends Command {
-  static description = 'describe the command here'
+  static description = 'Runs a development server from the CLI'
 
   static examples = [
     `$ tru server
+`,
+    `$ tru server -t -p 4000
 `,
   ]
 
@@ -17,21 +19,21 @@ export default class Serve extends Command {
     localtunnel: flags.boolean({
       description: 'Run a localtunnel to expose the server to the Internet',
       char: 't',
-      default: false
+      default: false,
     }),
     'localtunnel-subdomain': flags.string({
       description: 'The subdomain for the local tunnel',
-      char: 's'
+      char: 's',
     }),
     // TODO share with @tru_id/cli
     'project-dir': flags.string({
       description: 'The directory that contains the tru.json Project configuration file',
-      default: '.'
+      default: '.',
     }),
     port: flags.integer({
       description: 'The port the server should listen on',
       char: 'p',
-      default: 8080
+      default: 8080,
     }),
   }
 
@@ -43,16 +45,16 @@ export default class Serve extends Command {
       port: flags.port,
       localtunnel: {
         enabled: flags.localtunnel,
-        subdomain: flags['localtunnel-subdomain']
+        subdomain: flags['localtunnel-subdomain'],
       },
       project: {
         client_id: projectConfig.credentials[0].client_id,
-        client_secret: projectConfig.credentials[0].client_secret
-      }
+        client_secret: projectConfig.credentials[0].client_secret,
+      },
     })
   }
 
-  // TODO share with @tru_id/cli 
+  // TODO share with @tru_id/cli
   async loadProjectConfig(flags: any) {
     const projectDirectory = flags['project-dir'] ?? process.cwd()
     const projectConfigFullPath = path.join(projectDirectory, 'tru.json')
