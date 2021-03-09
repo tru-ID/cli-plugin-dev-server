@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/tru-ID/cli-plugin-dev-server/compare/v0.0.2...v0.0.3) (2021-03-09)
+
+* Update the `server` command description
+
 ### 0.0.2 (2021-02-05)
 
 * bump depency on [@tru_id/dev-server](https://github.com/tru-ID/server-example-node) to v0.1.4
