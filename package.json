@@ -66,6 +66,7 @@
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md",
     "changelog": "standard-version",
-    "publish:canary": "npm publish --tag canary --access public"
+    "publish:canary": "npm publish --tag canary --access public",
+    "publish:latest": "npm publish --access public"    
   }
 }
