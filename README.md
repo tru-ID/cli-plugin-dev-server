@@ -15,7 +15,7 @@ Runs a development server from the tru.ID CLI
 
 # Installation
 
-To install plugins you'll need the [tru.ID CLI](https://github.com/tru-ID/cli) `v0.6.0@canary` or above.
+To install plugins you'll need the [tru.ID CLI](https://github.com/tru-ID/cli) `v0.8.0` or above.
 
 ```
 npm install -g @tru_id/cli@canary
@@ -85,7 +85,13 @@ git push v{version}@{tag}
 
 ### Publish to NPM
 
-To release a canary version run:
+To release version run:
+
+```
+yarn run publish:latest
+```
+
+To release a canary version only run:
 
 ```
 yarn run publish:canary

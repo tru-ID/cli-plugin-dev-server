@@ -1,13 +1,13 @@
 {
   "name": "@tru_id/cli-plugin-dev-server",
   "description": "Runs a development server from the tru.ID CLI",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Phil Leggetter @leggetter",
   "bugs": "https://github.com/tru-ID/cli-plugin-dev-server/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@tru_id/dev-server": "^0.1.4",
+    "@tru_id/dev-server": "^0.1.6",
     "fs-extra": "^9.1.0",
     "tslib": "^1"
   },
@@ -67,6 +67,6 @@
     "version": "oclif-dev readme && git add README.md",
     "changelog": "standard-version",
     "publish:canary": "npm publish --tag canary --access public",
-    "publish:latest": "npm publish --access public"    
+    "publish:latest": "npm publish --access public"
   }
 }
