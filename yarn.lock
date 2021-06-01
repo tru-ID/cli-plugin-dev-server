@@ -216,10 +216,10 @@
   resolved "https://registry.yarnpkg.com/@panva/asn1.js/-/asn1.js-1.0.0.tgz#dd55ae7b8129e02049f009408b97c61ccf9032f6"
   integrity sha512-UdkG3mLEqXgnlKsWanWcgb6dOjUzJ+XC5f+aWw30qrtjxeNUSfKX1cd5FBzOaXQumoe9nIqeZUvrRJS03HCCtw==
 
-"@tru_id/dev-server@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@tru_id/dev-server/-/dev-server-0.2.0.tgz#a162fb8ed5241c51ea2e7f845246428b0dbb88c7"
-  integrity sha512-5aYBVjrgfJ72d9JI3EvBLKZY3TzEiBA3Va+uGht1VhT4+JZgUb0YXH5Ym4ZYoByRovMkl8OvB26NttyRWF6uKg==
+"@tru_id/dev-server@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@tru_id/dev-server/-/dev-server-0.2.2.tgz#b8bbce91143a1f60d2db0a7990f1fa2f69261a5d"
+  integrity sha512-JcdW6bPHpqVmf5kmlOEdhNr6Lxof44otFUBk56OnPGhtzgd6eZHwuJSNFB5pOxs6AtdF+QhEWmSj8vyJ98a+Fw==
   dependencies:
     axios "^0.21.1"
     cors "^2.8.5"
