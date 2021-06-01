@@ -29,7 +29,32 @@ $ tru plugins:install @tru_id/cli-plugin-dev-server
 
 # Commands
 <!-- commands -->
+* [`tru server`](#tru-server)
 
+## `tru server`
+
+Runs a development server from the CLI
+
+```
+USAGE
+  $ tru server
+
+OPTIONS
+  -h, --help                                         show CLI help
+  -p, --port=port                                    [default: 8080] The port the server should listen on
+  -s, --localtunnel-subdomain=localtunnel-subdomain  The subdomain for the local tunnel
+  -t, --localtunnel                                  Run a localtunnel to expose the server to the Internet
+
+  --project-dir=project-dir                          [default: .] The directory that contains the tru.json Project
+                                                     configuration file
+
+EXAMPLES
+  $ tru server
+
+  $ tru server -t -p 4000
+```
+
+_See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.6/src/commands/server.ts)_
 <!-- commandsstop -->
 
 ## Releasing
