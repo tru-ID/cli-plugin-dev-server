@@ -54,7 +54,7 @@ EXAMPLES
   $ tru server -t -p 4000
 ```
 
-_See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.6/src/commands/server.ts)_
+_See code: [src/commands/server.ts](https://github.com/tru-ID/cli-plugin-dev-server/blob/v0.0.7/src/commands/server.ts)_
 <!-- commandsstop -->
 
 ## Releasing

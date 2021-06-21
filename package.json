@@ -1,7 +1,7 @@
 {
   "name": "@tru_id/cli-plugin-dev-server",
   "description": "Runs a development server from the tru.ID CLI",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Phil Leggetter @leggetter",
   "bugs": "https://github.com/tru-ID/cli-plugin-dev-server/issues",
   "dependencies": {
