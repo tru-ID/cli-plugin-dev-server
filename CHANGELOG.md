@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/tru-ID/cli-plugin-dev-server/compare/v0.0.7...v0.0.8) (2021-06-21)
+
+- bump dependency on [@tru_id/dev-server](https://github.com/tru-ID/server-example-node) to v0.2.3
+- Added POST /traces debug route
+
 ### [0.0.6](https://github.com/tru-ID/cli-plugin-dev-server/compare/v0.0.4...v0.0.6) (2021-06-01)
 
 - bump dependency on [@tru_id/dev-server](https://github.com/tru-ID/server-example-node) to v0.2.2
